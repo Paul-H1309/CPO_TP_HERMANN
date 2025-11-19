@@ -1,4 +1,4 @@
-package tp3_heroic_fantasy_hermann;
+package Armes;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -21,6 +21,14 @@ public abstract class Arme {
     @Override
     public String toString() {
         return "Arme{" + "nom=" + nom + ", niveauDAttaque=" + niveauDAttaque + '}';
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public int getNiveauDAttaque() {
+        return niveauDAttaque;
     }
     
 }
