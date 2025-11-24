@@ -11,16 +11,27 @@ import Armes.*;
  *
  * @author paulh
  */
-public abstract class Personnage {
+public abstract class Personnage implements etreVivant{
     
     private String nom;
     private int niveauDeVie;
+    
+    static int nbPersonnages = 0;
 
     public Personnage(String nom, int niveauDeVie) {
         this.nom = nom;
         this.niveauDeVie = niveauDeVie;
+        nbPersonnages++;
     }
 
+    public static int getNbPersonnages() {
+        return nbPersonnages;
+    }
+    
+    public void destroy() {
+        nbPersonnages--;
+    }
+    
     @Override
     public String toString() {
         return "Personnage{" + "nom=" + nom + ", niveauDeVie=" + niveauDeVie +"L'arme en main ="+armeEnMain+ '}';
@@ -59,3 +70,9 @@ public abstract class Personnage {
     }
 }
 }
+//if (Nb<=5){
+        //TabP.add(Arme0);
+
+//int capMax=5;
+//            if (TabP.size()<capMax){
+  //              TabP.add(Arme0);

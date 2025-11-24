@@ -11,9 +11,20 @@ package Personnage;
  */
 public class Magicien extends Personnage{
     private boolean confirmé;
+    static int nbMagicien = 0;
 
     public Magicien(String nom, int niveauDeVie, boolean confirmé) {
         super(nom, niveauDeVie);
+        nbMagicien++;
+    }
+
+    public void destroy() {
+        nbMagicien--;
+        super.destroy();
+    }
+    
+    public static int getNbMagicien() {
+        return nbMagicien;
     }
 
     public void setConfirmé(boolean confirmé) {

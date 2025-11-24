@@ -57,5 +57,33 @@ public class TP3_Heroic_Fantasy_HERMANN {
     int tailleDeTab0 = Tab0.size();
     System.out.println(tailleDeTab0);
     System.out.println(Tab0);
+       
+    Magicien A = new Magicien ("Radagast",55, false);
+    
+    Guerrier B = new Guerrier ("Aragorn",90, true);
+    
+    Epee C = new Epee (90,"Narsil", 40);
+    
+    Epee D = new Epee (5,"Epee en diamant", 30);
+    
+    Epee E = new Epee (3,"Epee en or", 35);
+    
+    Baton F = new Baton (8,"argent", 40);
+    
+    Baton G = new Baton (4,"Cuivre", 25);
+    
+    Baton H = new Baton (50,"Emraude", 80);
+    
+    B.ajouteArme(C);
+    B.ajouteArme(D);
+    B.ajouteArme(G);
+    B.equiperArme(C);
+    A.ajouteArme(F);
+    A.ajouteArme(H);
+    A.ajouteArme(E);
+    A.equiperArme(F);
+    System.out.println(A);
+    System.out.println(B);
     }
+
 }
