@@ -10,29 +10,7 @@ package Personnage;
  * @author paulh
  */
 public interface etreVivant {
-    
-    public void seFatiguer(){
-        int apresFat;
-        Personnage.niveauDeVie=Personnage.niveauDeVie-10;
-        return apresFat;
+    void seFatiguer();
+    boolean estVivant();
+    void estAttaque(int points);            
     }
-    
-    public boolean estVivant(){
-        boolean vie;
-        if(Personnage.niveauDeVie<=0){
-            vie=false;
-        }else{
-            vie=true;
-        }
-        return vie;
-    }
-    
-    void estAttaqué(int points){
-         int nouveauPV;
-         Personnage.niveauDeVie=Personnage.niveauDeVie-points;
-         return nouveauPV;
-    }
-    
-}
-    
-

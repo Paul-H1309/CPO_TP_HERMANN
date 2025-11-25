@@ -10,6 +10,12 @@ package Personnage;
  * @author paulh
  */
 public class Magicien extends Personnage{
+    
+    public void attaquer(Personnage ciblé) {
+        System.out.println("Le magicien fait une attaque ");
+        ciblé.estAttaque(20);
+    }
+    
     private boolean confirmé;
     static int nbMagicien = 0;
 

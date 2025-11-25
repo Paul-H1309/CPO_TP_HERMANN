@@ -10,6 +10,12 @@ package Personnage;
  * @author paulh
  */
 public class Guerrier extends Personnage{
+    
+    public void attaquer(Personnage ciblé) {
+        System.out.println("Le guerrier fait une attaque ");
+        ciblé.estAttaque(30);
+    }
+    
     private boolean aCheval;
     static int nbGuerrier = 0;
 

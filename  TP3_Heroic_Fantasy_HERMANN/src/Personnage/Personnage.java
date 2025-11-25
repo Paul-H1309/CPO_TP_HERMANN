@@ -12,6 +12,26 @@ import Armes.*;
  * @author paulh
  */
 public abstract class Personnage implements etreVivant{
+
+    public void attaquer(Personnage cible) {
+        
+    }
+    
+    public Personnage(int niveauDeVie) {
+        this.niveauDeVie = niveauDeVie;
+    }
+
+    public void seFatiguer() {
+        this.niveauDeVie -= 10;
+    }
+
+    public boolean estVivant() {
+        return this.niveauDeVie > 0;
+    }
+
+    public void estAttaque(int points) {
+        this.niveauDeVie -= points;
+    }
     
     private String nom;
     private int niveauDeVie;
