@@ -10,7 +10,10 @@ package Personnage;
  * @author paulh
  */
 public interface etreVivant {
+    
     void seFatiguer();
+    
     boolean estVivant();
+    
     void estAttaque(int points);            
     }
