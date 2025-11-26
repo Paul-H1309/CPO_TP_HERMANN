@@ -31,10 +31,10 @@ public class FenetreQuiz extends javax.swing.JFrame {
         Question q = Tab.get(indCou);
 
         Question.setText(q.getIntitule());
-        jButton1.setText(q.getIntitule());
-        jButton2.setText(q.getIntitule());
-        jButton3.setText(q.getIntitule());
-        jButton4.setText(q.getIntitule());
+        jButton1.setText(q.getProposition1());
+        jButton2.setText(q.getProposition2());
+        jButton3.setText(q.getProposition3());
+        jButton4.setText(q.getProposition4());
 
         jButton1.setEnabled(true);
         jButton2.setEnabled(true);
@@ -49,6 +49,8 @@ public class FenetreQuiz extends javax.swing.JFrame {
      */
     public FenetreQuiz() {
         initComponents();
+        mettreQuestion();
+        afficherQuestionCourante();
     }
 
     /**
@@ -122,9 +124,6 @@ public class FenetreQuiz extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(145, 145, 145)
-                        .addComponent(Question, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jButton1)
@@ -144,15 +143,19 @@ public class FenetreQuiz extends javax.swing.JFrame {
                             .addComponent(jButton4)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(142, 142, 142)
-                        .addComponent(Suivant)))
+                        .addComponent(Suivant))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Question, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(41, 41, 41)))
                 .addContainerGap(52, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(85, 85, 85)
-                .addComponent(Question)
-                .addGap(38, 38, 38)
+                .addGap(47, 47, 47)
+                .addComponent(Question, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(VouF)
                     .addComponent(Score)
