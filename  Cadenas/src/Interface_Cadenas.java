@@ -13,7 +13,7 @@ public class Interface_Cadenas extends javax.swing.JFrame {
     private int l=0;
     private int j=0;
     private int m=0;
-    
+    private int z=0;
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Interface_Cadenas.class.getName());
 
@@ -162,6 +162,11 @@ public class Interface_Cadenas extends javax.swing.JFrame {
                         getContentPane().add(Instruction, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 24, 330, -1));
 
                         Bt_test.setText("TESTER");
+                        Bt_test.addActionListener(new java.awt.event.ActionListener() {
+                            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                Bt_testActionPerformed(evt);
+                            }
+                        });
                         getContentPane().add(Bt_test, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, -1, -1));
 
                         Bt_recommence.setText("RECOMMENCER");
@@ -172,6 +177,8 @@ public class Interface_Cadenas extends javax.swing.JFrame {
                         });
                         getContentPane().add(Bt_recommence, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, -1, -1));
 
+                        Nb_tentetive.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+                        Nb_tentetive.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
                         Nb_tentetive.setText("jLabel6");
                         Nb_tentetive.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
                         getContentPane().add(Nb_tentetive, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, 81, 50));
@@ -279,6 +286,12 @@ public class Interface_Cadenas extends javax.swing.JFrame {
     private void Numero1ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_Numero1ComponentAdded
         // TODO add your handling code here:
     }//GEN-LAST:event_Numero1ComponentAdded
+
+    private void Bt_testActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_testActionPerformed
+        // TODO add your handling code here:
+        z++;
+        Nb_tentetive.setText(""+z);
+    }//GEN-LAST:event_Bt_testActionPerformed
 
     /**
      * @param args the command line arguments
