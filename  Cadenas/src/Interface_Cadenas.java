@@ -69,7 +69,7 @@ public class Interface_Cadenas extends javax.swing.JFrame {
                 Bt_bas1ActionPerformed(evt);
             }
         });
-        getContentPane().add(Bt_bas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, -1));
+        getContentPane().add(Bt_bas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 210, 70, -1));
 
         Bt_bas2.setText("\\/");
         Bt_bas2.addActionListener(new java.awt.event.ActionListener() {
@@ -77,7 +77,7 @@ public class Interface_Cadenas extends javax.swing.JFrame {
                 Bt_bas2ActionPerformed(evt);
             }
         });
-        getContentPane().add(Bt_bas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, -1, -1));
+        getContentPane().add(Bt_bas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 70, -1));
 
         Bt_bas3.setText("\\/");
         Bt_bas3.addActionListener(new java.awt.event.ActionListener() {
@@ -85,7 +85,7 @@ public class Interface_Cadenas extends javax.swing.JFrame {
                 Bt_bas3ActionPerformed(evt);
             }
         });
-        getContentPane().add(Bt_bas3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
+        getContentPane().add(Bt_bas3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, 70, -1));
 
         Bt_bas4.setText("\\/");
         Bt_bas4.addActionListener(new java.awt.event.ActionListener() {
@@ -93,7 +93,7 @@ public class Interface_Cadenas extends javax.swing.JFrame {
                 Bt_bas4ActionPerformed(evt);
             }
         });
-        getContentPane().add(Bt_bas4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, -1, -1));
+        getContentPane().add(Bt_bas4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, 70, -1));
 
         Bt_haut1.setText("/\\");
             Bt_haut1.addActionListener(new java.awt.event.ActionListener() {
@@ -101,7 +101,7 @@ public class Interface_Cadenas extends javax.swing.JFrame {
                     Bt_haut1ActionPerformed(evt);
                 }
             });
-            getContentPane().add(Bt_haut1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, -1, -1));
+            getContentPane().add(Bt_haut1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 70, -1));
 
             Bt_haut2.setText("/\\");
                 Bt_haut2.addActionListener(new java.awt.event.ActionListener() {
@@ -109,7 +109,7 @@ public class Interface_Cadenas extends javax.swing.JFrame {
                         Bt_haut2ActionPerformed(evt);
                     }
                 });
-                getContentPane().add(Bt_haut2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, -1));
+                getContentPane().add(Bt_haut2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 70, -1));
 
                 Bt_haut3.setText("/\\");
                     Bt_haut3.addActionListener(new java.awt.event.ActionListener() {
@@ -117,7 +117,7 @@ public class Interface_Cadenas extends javax.swing.JFrame {
                             Bt_haut3ActionPerformed(evt);
                         }
                     });
-                    getContentPane().add(Bt_haut3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, -1, -1));
+                    getContentPane().add(Bt_haut3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, 70, -1));
 
                     Bt_haut4.setText("/\\");
                         Bt_haut4.addActionListener(new java.awt.event.ActionListener() {
@@ -125,10 +125,14 @@ public class Interface_Cadenas extends javax.swing.JFrame {
                                 Bt_haut4ActionPerformed(evt);
                             }
                         });
-                        getContentPane().add(Bt_haut4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, -1, -1));
+                        getContentPane().add(Bt_haut4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, 70, -1));
 
+                        Numero1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+                        Numero1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
                         Numero1.setText("jLabel1");
                         Numero1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 3, true));
+                        Numero1.setInheritsPopupMenu(false);
+                        Numero1.setMaximumSize(new java.awt.Dimension(46, 22));
                         Numero1.addContainerListener(new java.awt.event.ContainerAdapter() {
                             public void componentAdded(java.awt.event.ContainerEvent evt) {
                                 Numero1ComponentAdded(evt);
@@ -136,14 +140,20 @@ public class Interface_Cadenas extends javax.swing.JFrame {
                         });
                         getContentPane().add(Numero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 72, 111));
 
+                        Numero2.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+                        Numero2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
                         Numero2.setText("jLabel2");
                         Numero2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
                         getContentPane().add(Numero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 72, 111));
 
+                        Numero3.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+                        Numero3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
                         Numero3.setText("jLabel3");
                         Numero3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
                         getContentPane().add(Numero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 72, 111));
 
+                        Numero4.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+                        Numero4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
                         Numero4.setText("jLabel4");
                         Numero4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
                         getContentPane().add(Numero4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 72, 111));
