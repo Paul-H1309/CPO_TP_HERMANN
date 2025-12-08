@@ -9,6 +9,12 @@
  */
 public class Interface_Cadenas extends javax.swing.JFrame {
     
+    private int k=0;
+    private int l=0;
+    private int j=0;
+    private int m=0;
+    
+    
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Interface_Cadenas.class.getName());
 
     /**
@@ -58,9 +64,19 @@ public class Interface_Cadenas extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Bt_bas1.setText("\\/");
+        Bt_bas1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Bt_bas1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(Bt_bas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, -1));
 
         Bt_bas2.setText("\\/");
+        Bt_bas2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Bt_bas2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(Bt_bas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, -1, -1));
 
         Bt_bas3.setText("\\/");
@@ -72,6 +88,11 @@ public class Interface_Cadenas extends javax.swing.JFrame {
         getContentPane().add(Bt_bas3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
 
         Bt_bas4.setText("\\/");
+        Bt_bas4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Bt_bas4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(Bt_bas4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, -1, -1));
 
         Bt_haut1.setText("/\\");
@@ -83,16 +104,36 @@ public class Interface_Cadenas extends javax.swing.JFrame {
             getContentPane().add(Bt_haut1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, -1, -1));
 
             Bt_haut2.setText("/\\");
+                Bt_haut2.addActionListener(new java.awt.event.ActionListener() {
+                    public void actionPerformed(java.awt.event.ActionEvent evt) {
+                        Bt_haut2ActionPerformed(evt);
+                    }
+                });
                 getContentPane().add(Bt_haut2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, -1));
 
                 Bt_haut3.setText("/\\");
+                    Bt_haut3.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                            Bt_haut3ActionPerformed(evt);
+                        }
+                    });
                     getContentPane().add(Bt_haut3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, -1, -1));
 
                     Bt_haut4.setText("/\\");
+                        Bt_haut4.addActionListener(new java.awt.event.ActionListener() {
+                            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                Bt_haut4ActionPerformed(evt);
+                            }
+                        });
                         getContentPane().add(Bt_haut4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, -1, -1));
 
                         Numero1.setText("jLabel1");
                         Numero1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 3, true));
+                        Numero1.addContainerListener(new java.awt.event.ContainerAdapter() {
+                            public void componentAdded(java.awt.event.ContainerEvent evt) {
+                                Numero1ComponentAdded(evt);
+                            }
+                        });
                         getContentPane().add(Numero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 72, 111));
 
                         Numero2.setText("jLabel2");
@@ -151,15 +192,83 @@ public class Interface_Cadenas extends javax.swing.JFrame {
 
     private void Bt_bas3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_bas3ActionPerformed
         // TODO add your handling code here:
+        j--;
+        Numero3.setText(""+j);
+        if(j<1){
+            j=10;
+        }
     }//GEN-LAST:event_Bt_bas3ActionPerformed
 
     private void Bt_haut1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_haut1ActionPerformed
         // TODO add your handling code here:
+        k++;
+        Numero1.setText(""+k);
+        if(k>8){
+            k=-1;
+        }
     }//GEN-LAST:event_Bt_haut1ActionPerformed
 
     private void Bt_recommenceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_recommenceActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Bt_recommenceActionPerformed
+
+    private void Bt_haut2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_haut2ActionPerformed
+        // TODO add your handling code here:
+        l++;
+        Numero2.setText(""+l);
+        if(l>8){
+            l=-1;
+        }
+    }//GEN-LAST:event_Bt_haut2ActionPerformed
+
+    private void Bt_haut3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_haut3ActionPerformed
+        // TODO add your handling code here:
+        j++;
+        Numero3.setText(""+j);
+        if(j>8){
+            j=-1;
+        }
+    }//GEN-LAST:event_Bt_haut3ActionPerformed
+
+    private void Bt_haut4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_haut4ActionPerformed
+        // TODO add your handling code here:
+        m++;
+        Numero4.setText(""+m);
+        if(m>8){
+            m=-1;
+        }
+    }//GEN-LAST:event_Bt_haut4ActionPerformed
+
+    private void Bt_bas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_bas1ActionPerformed
+        // TODO add your handling code here:
+        k--;
+        Numero1.setText(""+k);
+        if(k<1){
+            k=10;
+        }
+    }//GEN-LAST:event_Bt_bas1ActionPerformed
+
+    private void Bt_bas2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_bas2ActionPerformed
+        // TODO add your handling code here:
+        l--;
+        Numero2.setText(""+l);
+        if(l<1){
+            l=10;
+        }
+    }//GEN-LAST:event_Bt_bas2ActionPerformed
+
+    private void Bt_bas4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_bas4ActionPerformed
+        // TODO add your handling code here:
+        m--;
+        Numero4.setText(""+m);
+        if(m<1){
+            m=10;
+        }
+    }//GEN-LAST:event_Bt_bas4ActionPerformed
+
+    private void Numero1ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_Numero1ComponentAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Numero1ComponentAdded
 
     /**
      * @param args the command line arguments
