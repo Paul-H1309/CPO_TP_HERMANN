@@ -28,138 +28,138 @@ public class Interface_Cadenas extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton9 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        Bt_bas1 = new javax.swing.JButton();
+        Bt_bas2 = new javax.swing.JButton();
+        Bt_bas3 = new javax.swing.JButton();
+        Bt_bas4 = new javax.swing.JButton();
+        Bt_haut1 = new javax.swing.JButton();
+        Bt_haut2 = new javax.swing.JButton();
+        Bt_haut3 = new javax.swing.JButton();
+        Bt_haut4 = new javax.swing.JButton();
+        Numero1 = new javax.swing.JLabel();
+        Numero2 = new javax.swing.JLabel();
+        Numero3 = new javax.swing.JLabel();
+        Numero4 = new javax.swing.JLabel();
+        Instruction = new javax.swing.JLabel();
+        Bt_test = new javax.swing.JButton();
+        Bt_recommence = new javax.swing.JButton();
+        Nb_tentetive = new javax.swing.JLabel();
+        Nb_num_exact = new javax.swing.JLabel();
+        Nb_num_haut = new javax.swing.JLabel();
+        Nb_num_bas = new javax.swing.JLabel();
+        nb_bon = new javax.swing.JLabel();
+        nb_haut = new javax.swing.JLabel();
+        nb_bas = new javax.swing.JLabel();
+        Tentative = new javax.swing.JLabel();
 
         jButton9.setText("jButton9");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("\\/");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, -1));
+        Bt_bas1.setText("\\/");
+        getContentPane().add(Bt_bas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, -1));
 
-        jButton2.setText("\\/");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, -1, -1));
+        Bt_bas2.setText("\\/");
+        getContentPane().add(Bt_bas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, -1, -1));
 
-        jButton3.setText("\\/");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        Bt_bas3.setText("\\/");
+        Bt_bas3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                Bt_bas3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
+        getContentPane().add(Bt_bas3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
 
-        jButton4.setText("\\/");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, -1, -1));
+        Bt_bas4.setText("\\/");
+        getContentPane().add(Bt_bas4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, -1, -1));
 
-        jButton5.setText("/\\");
-            jButton5.addActionListener(new java.awt.event.ActionListener() {
+        Bt_haut1.setText("/\\");
+            Bt_haut1.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
-                    jButton5ActionPerformed(evt);
+                    Bt_haut1ActionPerformed(evt);
                 }
             });
-            getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, -1, -1));
+            getContentPane().add(Bt_haut1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, -1, -1));
 
-            jButton6.setText("/\\");
-                getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, -1));
+            Bt_haut2.setText("/\\");
+                getContentPane().add(Bt_haut2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, -1));
 
-                jButton7.setText("/\\");
-                    getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, -1, -1));
+                Bt_haut3.setText("/\\");
+                    getContentPane().add(Bt_haut3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, -1, -1));
 
-                    jButton8.setText("/\\");
-                        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, -1, -1));
+                    Bt_haut4.setText("/\\");
+                        getContentPane().add(Bt_haut4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, -1, -1));
 
-                        jLabel1.setText("jLabel1");
-                        jLabel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 3, true));
-                        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 72, 111));
+                        Numero1.setText("jLabel1");
+                        Numero1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 3, true));
+                        getContentPane().add(Numero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 72, 111));
 
-                        jLabel2.setText("jLabel2");
-                        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
-                        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 72, 111));
+                        Numero2.setText("jLabel2");
+                        Numero2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+                        getContentPane().add(Numero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 72, 111));
 
-                        jLabel3.setText("jLabel3");
-                        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
-                        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 72, 111));
+                        Numero3.setText("jLabel3");
+                        Numero3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+                        getContentPane().add(Numero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 72, 111));
 
-                        jLabel4.setText("jLabel4");
-                        jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
-                        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 72, 111));
+                        Numero4.setText("jLabel4");
+                        Numero4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+                        getContentPane().add(Numero4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 72, 111));
 
-                        jLabel5.setText("Trouver le bon code en moins de 5 tentatives !");
-                        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 24, 330, -1));
+                        Instruction.setText("Trouver le bon code en moins de 5 tentatives !");
+                        getContentPane().add(Instruction, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 24, 330, -1));
 
-                        jButton10.setText("TESTER");
-                        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, -1, -1));
+                        Bt_test.setText("TESTER");
+                        getContentPane().add(Bt_test, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, -1, -1));
 
-                        jButton11.setText("RECOMMENCER");
-                        jButton11.addActionListener(new java.awt.event.ActionListener() {
+                        Bt_recommence.setText("RECOMMENCER");
+                        Bt_recommence.addActionListener(new java.awt.event.ActionListener() {
                             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                jButton11ActionPerformed(evt);
+                                Bt_recommenceActionPerformed(evt);
                             }
                         });
-                        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, -1, -1));
+                        getContentPane().add(Bt_recommence, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, -1, -1));
 
-                        jLabel6.setText("jLabel6");
-                        jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
-                        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, 81, 50));
+                        Nb_tentetive.setText("jLabel6");
+                        Nb_tentetive.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+                        getContentPane().add(Nb_tentetive, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, 81, 50));
 
-                        jLabel7.setText("Nombre de chiffre excate :");
-                        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, 156, -1));
+                        Nb_num_exact.setText("Nombre de chiffres exacts :");
+                        getContentPane().add(Nb_num_exact, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, 156, -1));
 
-                        jLabel8.setText("Nombre de chiffre trop hauts :");
-                        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 160, -1));
+                        Nb_num_haut.setText("Nombre de chiffres trop hauts :");
+                        getContentPane().add(Nb_num_haut, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 160, -1));
 
-                        jLabel9.setText("Nombre de chiffre trop bas :");
-                        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 156, -1));
+                        Nb_num_bas.setText("Nombre de chiffres trop bas :");
+                        getContentPane().add(Nb_num_bas, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 156, -1));
 
-                        jLabel10.setText("jLabel10");
-                        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 43, -1));
+                        nb_bon.setText("jLabel10");
+                        getContentPane().add(nb_bon, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 43, -1));
 
-                        jLabel11.setText("jLabel11");
-                        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 43, -1));
+                        nb_haut.setText("jLabel11");
+                        getContentPane().add(nb_haut, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 43, -1));
 
-                        jLabel12.setText("jLabel12");
-                        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 43, -1));
+                        nb_bas.setText("jLabel12");
+                        getContentPane().add(nb_bas, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 43, -1));
 
-                        jLabel13.setText("TENTATIVES");
-                        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 260, 70, 20));
+                        Tentative.setText("TENTATIVES");
+                        getContentPane().add(Tentative, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 260, 70, 20));
 
                         pack();
                     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void Bt_bas3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_bas3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_Bt_bas3ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void Bt_haut1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_haut1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_Bt_haut1ActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void Bt_recommenceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_recommenceActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_Bt_recommenceActionPerformed
 
     /**
      * @param args the command line arguments
@@ -187,29 +187,29 @@ public class Interface_Cadenas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
+    private javax.swing.JButton Bt_bas1;
+    private javax.swing.JButton Bt_bas2;
+    private javax.swing.JButton Bt_bas3;
+    private javax.swing.JButton Bt_bas4;
+    private javax.swing.JButton Bt_haut1;
+    private javax.swing.JButton Bt_haut2;
+    private javax.swing.JButton Bt_haut3;
+    private javax.swing.JButton Bt_haut4;
+    private javax.swing.JButton Bt_recommence;
+    private javax.swing.JButton Bt_test;
+    private javax.swing.JLabel Instruction;
+    private javax.swing.JLabel Nb_num_bas;
+    private javax.swing.JLabel Nb_num_exact;
+    private javax.swing.JLabel Nb_num_haut;
+    private javax.swing.JLabel Nb_tentetive;
+    private javax.swing.JLabel Numero1;
+    private javax.swing.JLabel Numero2;
+    private javax.swing.JLabel Numero3;
+    private javax.swing.JLabel Numero4;
+    private javax.swing.JLabel Tentative;
     private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel nb_bas;
+    private javax.swing.JLabel nb_bon;
+    private javax.swing.JLabel nb_haut;
     // End of variables declaration//GEN-END:variables
 }
