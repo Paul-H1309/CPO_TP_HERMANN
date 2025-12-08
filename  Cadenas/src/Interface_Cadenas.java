@@ -129,7 +129,7 @@ public class Interface_Cadenas extends javax.swing.JFrame {
 
                         Numero1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
                         Numero1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-                        Numero1.setText("jLabel1");
+                        Numero1.setText("0");
                         Numero1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 3, true));
                         Numero1.setInheritsPopupMenu(false);
                         Numero1.setMaximumSize(new java.awt.Dimension(46, 22));
@@ -142,19 +142,19 @@ public class Interface_Cadenas extends javax.swing.JFrame {
 
                         Numero2.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
                         Numero2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-                        Numero2.setText("jLabel2");
+                        Numero2.setText("0");
                         Numero2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
                         getContentPane().add(Numero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 72, 111));
 
                         Numero3.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
                         Numero3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-                        Numero3.setText("jLabel3");
+                        Numero3.setText("0");
                         Numero3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
                         getContentPane().add(Numero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 72, 111));
 
                         Numero4.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
                         Numero4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-                        Numero4.setText("jLabel4");
+                        Numero4.setText("0");
                         Numero4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
                         getContentPane().add(Numero4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 72, 111));
 
@@ -179,7 +179,7 @@ public class Interface_Cadenas extends javax.swing.JFrame {
 
                         Nb_tentetive.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
                         Nb_tentetive.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-                        Nb_tentetive.setText("jLabel6");
+                        Nb_tentetive.setText("0");
                         Nb_tentetive.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
                         getContentPane().add(Nb_tentetive, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, 81, 50));
 
