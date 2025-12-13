@@ -31,7 +31,6 @@ public class Interface_Cadenas extends javax.swing.JFrame {
      */
     public Interface_Cadenas() {
         
-        initComponents();
         jeu = new Jeu_Cadenas();
         jeu.genererCombinaison();
 
@@ -210,13 +209,13 @@ public class Interface_Cadenas extends javax.swing.JFrame {
                         Nb_num_bas.setText("Nombre de chiffres trop bas :");
                         getContentPane().add(Nb_num_bas, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 156, -1));
 
-                        nb_bon.setText("jLabel10");
+                        nb_bon.setText("0");
                         getContentPane().add(nb_bon, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 43, -1));
 
-                        nb_haut.setText("jLabel11");
+                        nb_haut.setText("0");
                         getContentPane().add(nb_haut, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 43, -1));
 
-                        nb_bas.setText("jLabel12");
+                        nb_bas.setText("0");
                         getContentPane().add(nb_bas, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 43, -1));
 
                         Tentative.setText("TENTATIVES");
@@ -228,19 +227,15 @@ public class Interface_Cadenas extends javax.swing.JFrame {
     private void Bt_bas3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_bas3ActionPerformed
         // TODO add your handling code here:
         j--;
-        Numero3.setText(""+j);
-        if(j<1){
-            j=10;
-        }
+        if (j < 0) j = 9;
+        Numero3.setText("" + j);
     }//GEN-LAST:event_Bt_bas3ActionPerformed
 
     private void Bt_haut1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_haut1ActionPerformed
         // TODO add your handling code here:
         k++;
-        Numero1.setText(""+k);
-        if(k>8){
-            k=-1;
-        }
+        if (k > 9) k = 0;
+        Numero1.setText("" + k);
     }//GEN-LAST:event_Bt_haut1ActionPerformed
 
     private void Bt_recommenceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_recommenceActionPerformed
@@ -260,55 +255,43 @@ public class Interface_Cadenas extends javax.swing.JFrame {
     private void Bt_haut2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_haut2ActionPerformed
         // TODO add your handling code here:
         l++;
-        Numero2.setText(""+l);
-        if(l>8){
-            l=-1;
-        }
+        if (l > 9) l = 0;
+        Numero2.setText("" + l);
     }//GEN-LAST:event_Bt_haut2ActionPerformed
 
     private void Bt_haut3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_haut3ActionPerformed
         // TODO add your handling code here:
         j++;
-        Numero3.setText(""+j);
-        if(j>8){
-            j=-1;
-        }
+        if (j > 9) j = 0;
+        Numero3.setText("" + j);
     }//GEN-LAST:event_Bt_haut3ActionPerformed
 
     private void Bt_haut4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_haut4ActionPerformed
         // TODO add your handling code here:
         m++;
-        Numero4.setText(""+m);
-        if(m>8){
-            m=-1;
-        }
+        if (m > 9) m = 0;
+        Numero4.setText("" + m);
     }//GEN-LAST:event_Bt_haut4ActionPerformed
 
     private void Bt_bas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_bas1ActionPerformed
         // TODO add your handling code here:
         k--;
-        Numero1.setText(""+k);
-        if(k<1){
-            k=10;
-        }
+        if (k < 0) k = 9;
+        Numero1.setText("" + k);
     }//GEN-LAST:event_Bt_bas1ActionPerformed
 
     private void Bt_bas2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_bas2ActionPerformed
         // TODO add your handling code here:
         l--;
-        Numero2.setText(""+l);
-        if(l<1){
-            l=10;
-        }
+        if (l < 0) l = 9;
+        Numero2.setText("" + l);
     }//GEN-LAST:event_Bt_bas2ActionPerformed
 
     private void Bt_bas4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_bas4ActionPerformed
         // TODO add your handling code here:
         m--;
-        Numero4.setText(""+m);
-        if(m<1){
-            m=10;
-        }
+        if (m < 0) m = 9;
+        Numero4.setText("" + m);
     }//GEN-LAST:event_Bt_bas4ActionPerformed
 
     private void Numero1ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_Numero1ComponentAdded
