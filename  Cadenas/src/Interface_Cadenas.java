@@ -250,6 +250,9 @@ public class Interface_Cadenas extends javax.swing.JFrame {
         Numero2.setText(""+l);
         Numero3.setText(""+j);
         Numero4.setText(""+m);
+        nb_bon.setText("0");
+        nb_haut.setText("0");
+        nb_bas.setText("0");
     }//GEN-LAST:event_Bt_recommenceActionPerformed
 
     private void Bt_haut2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_haut2ActionPerformed
