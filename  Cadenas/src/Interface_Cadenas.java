@@ -245,7 +245,9 @@ public class Interface_Cadenas extends javax.swing.JFrame {
         l=0;
         j=0;
         m=0;
+        
         Nb_tentetive.setText(""+z);
+        
         Numero1.setText(""+k);
         Numero2.setText(""+l);
         Numero3.setText(""+j);
@@ -253,6 +255,16 @@ public class Interface_Cadenas extends javax.swing.JFrame {
         nb_bon.setText("0");
         nb_haut.setText("0");
         nb_bas.setText("0");
+        
+        Bt_test.setEnabled(true);
+        Bt_bas1.setEnabled(true);
+        Bt_bas2.setEnabled(true);
+        Bt_bas3.setEnabled(true);
+        Bt_bas4.setEnabled(true);
+        Bt_haut1.setEnabled(true);
+        Bt_haut2.setEnabled(true);
+        Bt_haut3.setEnabled(true);
+        Bt_haut4.setEnabled(true);
     }//GEN-LAST:event_Bt_recommenceActionPerformed
 
     private void Bt_haut2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_haut2ActionPerformed
@@ -329,6 +341,18 @@ public class Interface_Cadenas extends javax.swing.JFrame {
             Nb_tentetive.setText("GAGNER");
         }
         
+        if (z==5){
+            Nb_tentetive.setText("PERDU");
+            Bt_test.setEnabled(false);
+            Bt_bas1.setEnabled(false);
+            Bt_bas2.setEnabled(false);
+            Bt_bas3.setEnabled(false);
+            Bt_bas4.setEnabled(false);
+            Bt_haut1.setEnabled(false);
+            Bt_haut2.setEnabled(false);
+            Bt_haut3.setEnabled(false);
+            Bt_haut4.setEnabled(false);
+        }
     }//GEN-LAST:event_Bt_testActionPerformed
 
     /**
