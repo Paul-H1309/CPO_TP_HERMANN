@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -15,12 +18,27 @@ public class Interface_Cadenas extends javax.swing.JFrame {
     private int m=0;
     private int z=0;
     
+    int[] TabC = new int[4];
+    
+    int[] Tab0 = new int[4];
+    
+    private Jeu_Cadenas jeu;
+    
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Interface_Cadenas.class.getName());
-
+    
     /**
      * Creates new form Interface_Cadenas
      */
     public Interface_Cadenas() {
+        
+        initComponents();
+        jeu = new Jeu_Cadenas();
+        jeu.genererCombinaison();
+
+        for (int i = 0; i < 4; i++) {
+            Tab0[i] = jeu.combinaisonSecrete[i];
+        }
+        
         initComponents();
     }
 
@@ -301,6 +319,30 @@ public class Interface_Cadenas extends javax.swing.JFrame {
         // TODO add your handling code here:
         z++;
         Nb_tentetive.setText(""+z);
+        
+        TabC[0] = k;
+        TabC[1] = l;
+        TabC[2] = j;
+        TabC[3] = m;
+        
+        Resultat y = jeu.analyser(Tab0, TabC);
+
+        nb_bon.setText("" + y.justes);
+        nb_haut.setText("" + y.tropHauts);
+        nb_bas.setText("" + y.tropBas);
+
+        if (y.justes == 4) {
+            Nb_tentetive.setText("GAGNÉ !");
+        }
+        
+        nb_bon.setText(""+y.justes);
+        nb_haut.setText(""+y.tropHauts);
+        nb_bas.setText(""+y.tropBas);
+        
+        if (y.justes==4){
+            Nb_tentetive.setText("GAGNER");
+        }
+        
     }//GEN-LAST:event_Bt_testActionPerformed
 
     /**
