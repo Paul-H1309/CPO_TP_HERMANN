@@ -13,8 +13,4 @@ public class Resultat {
     int tropHauts;
     int tropBas;
 
-    void analyser(int[] Tab0, int[] TabC) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
 }
